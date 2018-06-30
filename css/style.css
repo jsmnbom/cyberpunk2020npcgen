@@ -1,5 +1,5 @@
 * {
-  font-family: arial;
+  font-family: arial, serif;
 }
 
 body {
@@ -12,8 +12,6 @@ div.card {
   display: flex;
   flex-direction: column;
   width: 400px;
-  resize: both;
-  overflow: show;
 }
 
 .inv {
@@ -25,7 +23,7 @@ div.card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px 5px 5px 0px;
+  padding: 5px 5px 5px 0;
 }
 
 .top label {
@@ -62,7 +60,7 @@ div.stat > span:after {
 }
 
 div.stat > span {
-  margin: 10px 20px 10px 10px;
+  margin: 10px 15px 10px 5px;
 }
 
 div.stat {
@@ -71,8 +69,10 @@ div.stat {
 
 div.stat > span > span {
   display: inline-block;
-  min-width: 15px;
+  min-width: 5px;
   text-align: center;
+  padding: 0 3px;
+  height: 0.75em;
 }
 
 label {
@@ -89,8 +89,13 @@ label {
   font-weight: 600;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .header .fas {
   font-size: 150%;
+  color: black;
 }
 
 .armor {
@@ -123,16 +128,15 @@ label {
 }
 
 .textarea {
-  background-attachment: local;
-  background-image: linear-gradient(to right, white 3px, transparent 3px),
-    linear-gradient(to left, white 3px, transparent 3px),
-    repeating-linear-gradient(
-      white,
-      white 20px,
-      #000 20px,
-      #000 21px,
-      white 21px
-    );
+  background: linear-gradient(to right, white 3px, transparent 3px),
+  linear-gradient(to left, white 3px, transparent 3px),
+  repeating-linear-gradient(
+          white,
+          white 20px,
+          #000 20px,
+          #000 21px,
+          white 21px
+  ) local;
   line-height: 20px;
   padding: 2px 4px;
   resize: vertical;

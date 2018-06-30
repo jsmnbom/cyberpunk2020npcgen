@@ -21,12 +21,14 @@
 
     <div class="card">
         <div class="top">
-            <label class="inv" for="name">NAME</label><input id="name"/>
-            <label class="inv" for="role">ROLE</label><input id="role"/>
+            <label class="inv" for="name">NAME</label><input autocomplete="off" id="name"/>
+            <label class="inv" for="role">ROLE</label><input autocomplete="off" id="role"/>
         </div>
         <div class="header" id="stats-header">
-            <span class="inv">STATS</span>
-            <i class="fas fa-dice"></i>
+            <a href="#">
+                <span class="inv">STATS</span>
+                <i class="fas fa-dice"></i>
+            </a>
         </div>
         <div class="stats" id="stats">
             <div class="stat">
@@ -103,8 +105,8 @@
             </tbody>
         </table>
         <div class="middle">
-            <div class="sb"><label>SAVE</label><span contenteditable></span></div>
-            <div class="sb"><label>BTM</label><span contenteditable></span></div>
+            <div class="sb"><label>SAVE</label><span contenteditable id="save"></span></div>
+            <div class="sb"><label>BTM</label><span contenteditable id="btm"></span></div>
             <div class="dmg">
                 <table>
                     <tr>
