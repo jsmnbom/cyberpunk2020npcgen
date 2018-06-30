@@ -1,0 +1,222 @@
+* {
+  font-family: arial;
+}
+
+body {
+  padding: 5px;
+}
+
+div.card {
+  border: 1px black solid;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  resize: both;
+  overflow: show;
+}
+
+.inv {
+  background: black;
+  color: white;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 5px 5px 0px;
+}
+
+.top label {
+  padding: 4px 6px 4px 6px;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.top > * {
+  margin-right: 7px;
+}
+
+.top > *:last-child {
+  margin: 0;
+}
+
+.top input:nth-of-type(1) {
+  flex-grow: 2;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+div.stat > span:before {
+  content: "[";
+}
+
+div.stat > span:after {
+  content: "]";
+}
+
+div.stat > span {
+  margin: 10px 20px 10px 10px;
+}
+
+div.stat {
+  font-size: 130%;
+}
+
+div.stat > span > span {
+  display: inline-block;
+  min-width: 15px;
+  text-align: center;
+}
+
+label {
+  font-weight: 700;
+}
+
+.header {
+  margin: 4px 6px 4px 0;
+}
+
+.header span {
+  padding: 4px 6px 4px 6px;
+  font-size: 120%;
+  font-weight: 600;
+}
+
+.header .fas {
+  font-size: 150%;
+}
+
+.armor {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.armor td {
+  text-align: center;
+  padding: 5px;
+}
+
+.armor td:nth-of-type(1) {
+  background: black;
+  color: white;
+  font-style: italic;
+  font-size: 110%;
+  font-weight: 600;
+  border-right: 5px white solid;
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+}
+
+.armor td:not(:nth-of-type(1)) {
+  border: 1px black solid;
+}
+
+.armor tbody td {
+  line-height: 200%;
+}
+
+.textarea {
+  background-attachment: local;
+  background-image: linear-gradient(to right, white 3px, transparent 3px),
+    linear-gradient(to left, white 3px, transparent 3px),
+    repeating-linear-gradient(
+      white,
+      white 20px,
+      #000 20px,
+      #000 21px,
+      white 21px
+    );
+  line-height: 20px;
+  padding: 2px 4px;
+  resize: vertical;
+  font-size: 110%
+}
+
+.textarea.lines3 {
+  min-height: 60px;
+}
+
+.textarea.lines2 {
+  min-height: 40px;
+}
+
+.textarea span:nth-child(1) {
+  font-style: italic;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px
+}
+
+.middle .sb {
+  width: 50px;
+  height: 70px;
+  text-align: center;
+  margin-right: 8px;
+}
+
+.middle .sb label {
+  display: block;
+  width: 100%;
+  border-right: 1px black solid;
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  font-size: 110%;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 170%
+}
+
+.middle .sb span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px black solid;
+  line-height: 50px;
+}
+
+.dmg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dmg table {
+  border-spacing: 0;
+  font-size: 70%;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.dmg table tr:nth-of-type(2) {
+  border-collapse: collapse;
+}
+
+.dmg table tr:nth-of-type(2) td {
+  width: 6px;
+  height: 5px;
+}
+
+.dmg table tr:nth-of-type(2) td:not(:nth-child(5)) {
+  border: 1px black solid;
+  width: 8px;
+}
+
+.dmg table tr:nth-of-type(3) td {
+  background: black;
+  color: white;
+  border-top: 1px white solid;
+  text-align: center;
+}

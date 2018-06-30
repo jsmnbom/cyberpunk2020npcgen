@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cyberpunk 2020 NPC generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.2/awesomplete.css'>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <h1>Cyberpunk 2020 NPC generator</h1>
+
+    <div class="card">
+        <div class="top">
+            <label class="inv" for="name">NAME</label><input id="name"/>
+            <label class="inv" for="role">ROLE</label><input id="role"/>
+        </div>
+        <div class="header" id="stats-header">
+            <span class="inv">STATS</span>
+            <i class="fas fa-dice"></i>
+        </div>
+        <div class="stats" id="stats">
+            <div class="stat">
+                <label>INT</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>REF</label>
+                <span><span contenteditable="true"></span>/<span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>TECH</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>COOL</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>ATTR</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>LUCK</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>MA</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>BODY</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>EMP</label>
+                <span><span contenteditable="true"></span>/<span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>Run</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>Leap</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+            <div class="stat">
+                <label>Lift</label>
+                <span><span contenteditable="true"></span></span>
+            </div>
+        </div>
+        <table class="armor" id="armor">
+            <thead>
+                <tr>
+                    <td>Location</td>
+                    <td>Head<br>1</td>
+                    <td>Torso<br>2-4</td>
+                    <td>R.Arm<br>5</td>
+                    <td>L.Arm<br>6</td>
+                    <td>R.Leg<br>7-8</td>
+                    <td>L.Leg<br>9-0</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Armour SP</td>
+                    <td contenteditable>&nbsp;</td>
+                    <td contenteditable>&nbsp;</td>
+                    <td contenteditable>&nbsp;</td>
+                    <td contenteditable>&nbsp;</td>
+                    <td contenteditable>&nbsp;</td>
+                    <td contenteditable>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="middle">
+            <div class="sb"><label>SAVE</label><span contenteditable></span></div>
+            <div class="sb"><label>BTM</label><span contenteditable></span></div>
+            <div class="dmg">
+                <table>
+                    <tr>
+                        <td colspan="5">LIGHT</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=0</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">SERIOUS</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-1</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">CRITICAL</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-2</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">MORTAL0</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-3</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">MORTAL1</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-4</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">MORTAL2</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-5</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">MORTAL3</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-6</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">MORTAL4</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-7</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">MORTAL5</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-8</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td colspan="5">MORTAL6</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Stun=-9</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="textarea lines3"><span>Cybernetics</span> <span contenteditable id="cyber"></span>
+        </div>
+        <div class="textarea"><span>Special Ability</span> <span contenteditable id="special"></span>
+        </div>
+        <div class="textarea lines3"><span>Skills</span> <span contenteditable id="skills"></span>
+        </div>
+        <div class="textarea lines3"><span>Possssions</span> <span contenteditable id="possssions"></span>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.2/awesomplete.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js'></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
